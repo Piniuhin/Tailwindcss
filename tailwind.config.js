@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -14,7 +15,13 @@ module.exports = {
         "5xl": "50px", // covers everything above
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        firstColor: "	#66b3ff",
+        bodyColor: "hsl(228, 15%, 20%)",
+        containerColor: "hsl(228, 15%, 15%)",
+      },
+    },
   },
   plugins: [],
 };

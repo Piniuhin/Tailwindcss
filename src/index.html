@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--=============== REMIXICONS ===============-->
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+      />
     <title>Tailwindcss</title>
     <!-- <link rel="stylesheet" href="./src/main.css/main.css" /> -->
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-slate-900">
     <!--==================== HEADER ====================-->
 
-    <header class="fixed mp-6">
-      <nav class="flex justify-between items-center font-medium px-6">
-        <a href="#" class="text-lg"
-          >Activ<span class="text-indigo-500">Logo</span></a
+    <header class="bg-slate-100 dark:bg-containerColor">
+      <nav class="flex justify-between items-center font-medium container h-20">
+        <a href="#" class="text-lg text-gray-900 dark:text-gray-300"
+          >Activ<span class="text-firstColor">Logo</span></a
         >
-        <ul class="flex flex-row gap-x-12 text-indigo-500">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="flex flex-row gap-x-12 text-gray-900 font-semibold dark:text-gray-300">
+          <li><a href="#" class="hover:text-firstColor">Home</a></li>
+          <li><a href="#" class="hover:text-firstColor">About</a></li>
+          <li><a href="#" class="hover:text-firstColor">Skills</a></li>
+          <li><a href="#" class="hover:text-firstColor">Projects</a></li>
+          <li><a href="#" class="hover:text-firstColor">Contact</a></li>
+          <li class="hover:text-firstColor cursor-pointer"><i class="ri-moon-line change-theme" id="theme-button"></i></li>
         </ul>
       </nav>
     </header>
         <!--==================== MAIN ====================-->
         <main class="main">
           <!--==================== HOME ====================-->
-          <section class="" id="home">
-            <div class="">
+          <section class="overflow-y-auto whitespace-nowrap" id="home">
+            <div class="container bg-bodyColor flex">
               <div class="">
-                <div class="">
-                  <h3 class="">Hello, <span>I’m</span></h3>
-                  <h1 class="">Oleksandr</h1>
+                <div class="home-content">
+                  <h3 class="dark:text-white">Hello, <span class="">I’m</span></h3>
+                  <h1 class="dark:text-firstColor">Oleksandr</h1>
                   <h3 class="">Front-end Developer</h3>
-                  <p class="">
+                  <p class="text-gray-400">
                     I really enjoy creating projects that make everyday life and
                     business easier, more productive and more convenient.
                   </p>
     
-                  <a href="./assets/img/Oleksandr Piniuhin cv.pdf" class="" download
+                  <a href="./assets/img/Oleksandr Piniuhin cv.pdf" class="dark:hover:text-indigo-500" download
                     >Download C.V</a
                   >
                 </div>
@@ -78,12 +84,15 @@
                   height="440"
                   href=""
                   alt="Alexander"
-                  src="./assets/img/hero.jpg"
+                  src="./images/hero.jpg"
                 />
               </div>
             </div>
           </section>
     
           <!--==================== ABOUT ====================-->
+
+              <!--=============== MAIN JS ===============-->
+    <script src="./js/index.js"></script>
   </body>
 </html>
